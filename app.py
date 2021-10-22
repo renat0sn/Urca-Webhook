@@ -16,7 +16,7 @@ def check_auth(password):
 
 @app.route("/ipdo", methods=['POST'])
 def index():
-    '''print('--------------------')
+    print('--------------------')
     # Autenticação
     check_auth(request.headers['Authorization'])
 
@@ -34,8 +34,8 @@ def index():
     database.ipdo_to_mysql(file_name)
 
     os.remove(file_name)
-    print('--------------------')'''
+    print('--------------------')
     return 'OK'
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
