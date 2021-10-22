@@ -26,7 +26,7 @@ Parâmetros:
 '''
 def ipdo_to_mysql(file):
     # Dados do banco de dados
-    table_name = 'ipdo'
+    '''    table_name = 'ipdo'
     engine_str = CONN_MYSQL
     database = config.DATABASE
 
@@ -51,4 +51,4 @@ def ipdo_to_mysql(file):
             return True
         except:
             print('Inserção ERRO!')
-            return False
+            return False'''
